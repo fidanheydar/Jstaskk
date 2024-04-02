@@ -1,6 +1,4 @@
-#fileInput {
-    display: none; 
-}
+
 #doneTaskList li{
     text-decoration: line-through;
 }

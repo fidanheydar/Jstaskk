@@ -65,21 +65,14 @@ dropAreas.forEach(elem => {
 // });
 
 
-
-// const folderIcon = document.querySelector('.bi.bi-folder2-open');
-// const fileInput = document.getElementById('fileInput');
-
-// folderIcon.addEventListener('click', function() {
-//     fileInput.click();
-// });
-
-// fileInput.addEventListener('change', function() {
-// });
-
-
 let folderIcon = document.getElementById('folderIcon');
 let fileInput = document.getElementById('fileInput');
 
-    folderIcon.addEventListener('click', function() {
+folderIcon.addEventListener('click', function() {
+    if (fileInput.style.display === 'block') {
+        fileInput.style.display = 'none'; 
+    } else {
         fileInput.style.display = 'block';
-    });
+    }
+});
+
